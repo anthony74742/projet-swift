@@ -9,11 +9,13 @@ import SwiftUI
 
 class HomeViewModel: ObservableObject {
     @Published var username = ""
-    @Published var historyItems: [HistoryItem] = []
+    @Published var conversations: [Conversation] = []
     @Published var showProView = false
     @Published var isShowingSidebar = false
     @Published var isLoggedIn = true
     @Published var shouldNavigateToLogin = false
+    
+    private let storageManager = ChatStorageManager.shared
     
     func loadUserProfile() async {
         do {
@@ -26,39 +28,44 @@ class HomeViewModel: ObservableObject {
         }
     }
     
+    func loadConversations() {
+        conversations = storageManager.getConversations().sorted(by: { $0.lastMessageDate > $1.lastMessageDate })
+    }
+    
     func toggleMenu() {
-            print("Toggle menu")
-        }
-        
-        func upgradeToPro() {
-            showProView = true
-        }
-        
-        func summarizeAudio() {
-            print("Summarize audio")
-        }
-        
-        func chatWithAI() {
-            print("Chat with AI")
-        }
-        
-        func generateImage() {
-            print("Generate image")
-        }
-        
-        func seeAllHistory() {
-            print("See all history")
-        }
+        print("Toggle menu")
+    }
+    
+    func upgradeToPro() {
+        showProView = true
+    }
+    
+    func summarizeAudio() {
+        print("Summarize audio")
+    }
+    
+    func chatWithAI() {
+        print("Chat with AI")
+    }
+    
+    func generateImage() {
+        print("Generate image")
+    }
+    
+    func seeAllHistory() {
+        print("See all history")
+    }
 
-        func toggleSidebar() {
-            isShowingSidebar.toggle()
-        }
+    func toggleSidebar() {
+        isShowingSidebar.toggle()
+    }
 
     func logout() {
         Task {
             await SupabaseService.shared.logout()
             DispatchQueue.main.async {
                 self.isLoggedIn = false
+                self.shouldNavigateToLogin = true
             }
         }
     }
