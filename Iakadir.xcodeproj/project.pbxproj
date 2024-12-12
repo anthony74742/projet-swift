@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED4E648D2CF9EB9200A85F09 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = ED4E648C2CF9EB9200A85F09 /* Supabase */; };
+		ED8AEEC32CF9E72C00153158 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = ED8AEEC22CF9E72C00153158 /* SwiftKeychainWrapper */; };
+		ED8AEEC92CF9EAD200153158 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = ED8AEEC82CF9EAD200153158 /* Auth */; };
+		ED8AEECB2CF9EAD200153158 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = ED8AEECA2CF9EAD200153158 /* Functions */; };
+		ED8AEECD2CF9EAD200153158 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = ED8AEECC2CF9EAD200153158 /* PostgREST */; };
+		ED8AEECF2CF9EAD200153158 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = ED8AEECE2CF9EAD200153158 /* Realtime */; };
+		ED8AEED12CF9EAD200153158 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = ED8AEED02CF9EAD200153158 /* Storage */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ED13B4A12CF8A2C600A5FE44 /* Iakadir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Iakadir.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		ED13B4CE2CF8BEE300A5FE44 /* Exceptions for "Iakadir" folder in "Iakadir" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = ED13B4A02CF8A2C600A5FE44 /* Iakadir */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		ED13B4A32CF8A2C600A5FE44 /* Iakadir */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				ED13B4CE2CF8BEE300A5FE44 /* Exceptions for "Iakadir" folder in "Iakadir" target */,
+			);
+			path = Iakadir;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED13B49E2CF8A2C600A5FE44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED4E648D2CF9EB9200A85F09 /* Supabase in Frameworks */,
+				ED8AEED12CF9EAD200153158 /* Storage in Frameworks */,
+				ED8AEECD2CF9EAD200153158 /* PostgREST in Frameworks */,
+				ED8AEECB2CF9EAD200153158 /* Functions in Frameworks */,
+				ED8AEEC92CF9EAD200153158 /* Auth in Frameworks */,
+				ED8AEECF2CF9EAD200153158 /* Realtime in Frameworks */,
+				ED8AEEC32CF9E72C00153158 /* SwiftKeychainWrapper in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED13B4982CF8A2C600A5FE44 = {
+			isa = PBXGroup;
+			children = (
+				ED13B4A32CF8A2C600A5FE44 /* Iakadir */,
+				ED13B4A22CF8A2C600A5FE44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED13B4A22CF8A2C600A5FE44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED13B4A12CF8A2C600A5FE44 /* Iakadir.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED13B4A02CF8A2C600A5FE44 /* Iakadir */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED13B4AF2CF8A2C700A5FE44 /* Build configuration list for PBXNativeTarget "Iakadir" */;
+			buildPhases = (
+				ED13B49D2CF8A2C600A5FE44 /* Sources */,
+				ED13B49E2CF8A2C600A5FE44 /* Frameworks */,
+				ED13B49F2CF8A2C600A5FE44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				ED13B4A32CF8A2C600A5FE44 /* Iakadir */,
+			);
+			name = Iakadir;
+			packageProductDependencies = (
+				ED8AEEC22CF9E72C00153158 /* SwiftKeychainWrapper */,
+				ED8AEEC82CF9EAD200153158 /* Auth */,
+				ED8AEECA2CF9EAD200153158 /* Functions */,
+				ED8AEECC2CF9EAD200153158 /* PostgREST */,
+				ED8AEECE2CF9EAD200153158 /* Realtime */,
+				ED8AEED02CF9EAD200153158 /* Storage */,
+				ED4E648C2CF9EB9200A85F09 /* Supabase */,
+			);
+			productName = Iakadir;
+			productReference = ED13B4A12CF8A2C600A5FE44 /* Iakadir.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED13B4992CF8A2C600A5FE44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					ED13B4A02CF8A2C600A5FE44 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+				};
+			};
+			buildConfigurationList = ED13B49C2CF8A2C600A5FE44 /* Build configuration list for PBXProject "Iakadir" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED13B4982CF8A2C600A5FE44;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				ED8AEEC12CF9E72C00153158 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+				ED8AEEC72CF9E9BB00153158 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = ED13B4A22CF8A2C600A5FE44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED13B4A02CF8A2C600A5FE44 /* Iakadir */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED13B49F2CF8A2C600A5FE44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED13B49D2CF8A2C600A5FE44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ED13B4AD2CF8A2C700A5FE44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED13B4AE2CF8A2C700A5FE44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED13B4B02CF8A2C700A5FE44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Iakadir/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Iakadir/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.pelaz-anthony.Iakadir";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED13B4B12CF8A2C700A5FE44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Iakadir/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Iakadir/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.pelaz-anthony.Iakadir";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED13B49C2CF8A2C600A5FE44 /* Build configuration list for PBXProject "Iakadir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED13B4AD2CF8A2C700A5FE44 /* Debug */,
+				ED13B4AE2CF8A2C700A5FE44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED13B4AF2CF8A2C700A5FE44 /* Build configuration list for PBXNativeTarget "Iakadir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED13B4B02CF8A2C700A5FE44 /* Debug */,
+				ED13B4B12CF8A2C700A5FE44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ED8AEEC12CF9E72C00153158 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+		ED8AEEC72CF9E9BB00153158 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ED4E648C2CF9EB9200A85F09 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED8AEEC72CF9E9BB00153158 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+		ED8AEEC22CF9E72C00153158 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED8AEEC12CF9E72C00153158 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+		ED8AEEC82CF9EAD200153158 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED8AEEC72CF9E9BB00153158 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		ED8AEECA2CF9EAD200153158 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED8AEEC72CF9E9BB00153158 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		ED8AEECC2CF9EAD200153158 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED8AEEC72CF9E9BB00153158 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		ED8AEECE2CF9EAD200153158 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED8AEEC72CF9E9BB00153158 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		ED8AEED02CF9EAD200153158 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED8AEEC72CF9E9BB00153158 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = ED13B4992CF8A2C600A5FE44 /* Project object */;
+}
