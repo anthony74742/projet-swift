@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct MessageBubble: View {
-    let message: Message
+    let message: ChatMessage
     let isLeft: Bool
     @State private var isShowingOptions = false
     let onRegenerate: () -> Void
@@ -45,14 +45,6 @@ struct MessageBubble: View {
                             HStack(spacing: 8) {
                                 Image(systemName: "doc.on.doc")
                                 Text("Copier")
-                            }
-                            .foregroundColor(.greenBackground)
-                        }
-                        
-                        Button(action: onShare) {
-                            HStack(spacing: 8) {
-                                Image(systemName: "square.and.arrow.up")
-                                Text("Partager")
                             }
                             .foregroundColor(.greenBackground)
                         }

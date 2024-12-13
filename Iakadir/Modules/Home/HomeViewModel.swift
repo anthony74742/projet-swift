@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Supabase
 
 class HomeViewModel: ObservableObject {
     @Published var username = ""
@@ -14,8 +15,6 @@ class HomeViewModel: ObservableObject {
     @Published var isShowingSidebar = false
     @Published var isLoggedIn = true
     @Published var shouldNavigateToLogin = false
-    
-    private let storageManager = ChatStorageManager.shared
     
     func loadUserProfile() async {
         do {
@@ -28,8 +27,34 @@ class HomeViewModel: ObservableObject {
         }
     }
     
-    func loadConversations() {
-        conversations = storageManager.getConversations().sorted(by: { $0.lastMessageDate > $1.lastMessageDate })
+    func loadConversations() async {
+        do {
+            guard let user = try? await SupabaseService.shared.client.auth.user() else { return }
+            
+            let response: [Conversation] = try await SupabaseService.shared.client
+                .from("conversations")
+                .select()
+                .eq("user_id", value: user.id)
+                .order("created_at", ascending: false)
+                .execute()
+                .value
+            
+            DispatchQueue.main.async {
+                self.conversations = response
+            }
+        } catch {
+            print("Error loading conversations: \(error)")
+        }
+    }
+    
+    func updateLocalConversations(_ newConversation: Conversation) {
+        DispatchQueue.main.async {
+            if let index = self.conversations.firstIndex(where: { $0.id == newConversation.id }) {
+                self.conversations[index] = newConversation
+            } else {
+                self.conversations.insert(newConversation, at: 0)
+            }
+        }
     }
     
     func toggleMenu() {
@@ -55,11 +80,11 @@ class HomeViewModel: ObservableObject {
     func seeAllHistory() {
         print("See all history")
     }
-
+    
     func toggleSidebar() {
         isShowingSidebar.toggle()
     }
-
+    
     func logout() {
         Task {
             await SupabaseService.shared.logout()

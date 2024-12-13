@@ -9,34 +9,33 @@
 import SwiftUI
 
 struct HistorySection: View {
-    let historyItems: [HistoryItem]
-    let onSeeAll: () -> Void
+    let conversations: [Conversation]
+    let onConversationTap: (Conversation) -> Void
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            HStack {
-                Text("Historique")
-                    .font(.system(size: 20, weight: .bold))
-                    .foregroundColor(.white)
-                
-                Spacer()
-                
-                Button(action: onSeeAll) {
-                    Text("Voir tout")
-                        .font(.system(size: 14, weight: .medium))
-                        .foregroundColor(.gray)
-                }
-            }
-            .padding(.horizontal)
+            Text("Historique")
+                .font(.system(size: 20, weight: .bold))
+                .foregroundColor(.white)
             
-            VStack(spacing: 8) {
-                ForEach(historyItems) { item in
-                    HistoryItemView(item: item)
+            ForEach(conversations.prefix(5)) { conversation in
+                Button(action: { onConversationTap(conversation) }) {
+                    HStack {
+                        Image(systemName: "message")
+                            .foregroundColor(.greenBackground)
+                        Text(conversation.title)
+                            .lineLimit(1)
+                            .foregroundColor(.white)
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                            .foregroundColor(.gray)
+                    }
+                    .padding()
+                    .background(Color.white.opacity(0.1))
+                    .cornerRadius(10)
                 }
             }
-            .padding(.horizontal)
         }
+        .padding()
     }
 }
-
-
