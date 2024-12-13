@@ -77,10 +77,6 @@ class HomeViewModel: ObservableObject {
         print("Generate image")
     }
     
-    func seeAllHistory() {
-        print("See all history")
-    }
-    
     func toggleSidebar() {
         isShowingSidebar.toggle()
     }
@@ -95,4 +91,6 @@ class HomeViewModel: ObservableObject {
         }
     }
 }
+
+
 

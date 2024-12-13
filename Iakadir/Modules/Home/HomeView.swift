@@ -12,12 +12,14 @@ struct HomeView: View {
     @EnvironmentObject var appState: AppState
     @State private var isShowingChatView = false
     @State private var isShowingImageGenerationView = false
+    @State private var isShowingHistoryListView = false
     @State private var selectedConversationId: UUID?
     
     var body: some View {
         NavigationView {
             ZStack {
                 BackgroundView(color: .black)
+                    .edgesIgnoringSafeArea(.all)
                 
                 VStack(spacing: 0) {
                     HomeNavigationBar(
@@ -57,14 +59,14 @@ struct HomeView: View {
                                         
                                         Spacer()
                                         
-                                        Button(action: viewModel.seeAllHistory) {
+                                        Button(action: { isShowingHistoryListView = true }) {
                                             Text("Voir tout")
                                                 .font(.system(size: 14, weight: .medium))
                                                 .foregroundColor(.gray)
                                         }
                                     }
                                     
-                                    ForEach(viewModel.conversations) { conversation in
+                                    ForEach(viewModel.conversations.prefix(3)) { conversation in
                                         Button(action: { onConversationTap(conversation) }) {
                                             HStack(spacing: 12) {
                                                 Image(systemName: iconName(for: conversation))
@@ -120,6 +122,14 @@ struct HomeView: View {
                     EmptyView()
                 }
             )
+            .background(
+                NavigationLink(
+                    destination: HistoryListView(conversations: viewModel.conversations, onConversationTap: onConversationTap),
+                    isActive: $isShowingHistoryListView
+                ) {
+                    EmptyView()
+                }
+            )
         }
         .navigationViewStyle(StackNavigationViewStyle())
         .onAppear {
@@ -145,7 +155,6 @@ struct HomeView: View {
         return firstAssistantMessage?.content.hasPrefix("http") == true ? "photo" : "message"
     }
 }
-
 
 
 struct HomeView_Previews: PreviewProvider {
